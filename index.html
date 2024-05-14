@@ -1,0 +1,272 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Aptos;
+	panose-1:2 11 0 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Barlow;
+	panose-1:0 0 5 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=NL-BE style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal>&lt;!DOCTYPE html&gt;</p>
+
+<p class=MsoNormal>&lt;html lang=&quot;en&quot;&gt;</p>
+
+<p class=MsoNormal><span lang=EN-US>&lt;head&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>    &lt;meta charset=&quot;UTF-8&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>    &lt;meta name=&quot;viewport&quot;
+content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>    &lt;title&gt;Drink Order&lt;/title&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>    &lt;link rel=&quot;stylesheet&quot;
+href=&quot;styles.css&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&lt;/head&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&lt;body&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>    &lt;div class=&quot;container&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>        &lt;h1&gt;Drink Order&lt;/h1&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>        &lt;form
+id=&quot;drink-form&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>            &lt;div
+class=&quot;drink&quot;&gt;&lt;label
+for=&quot;pils&quot;&gt;Pils&lt;/label&gt;&lt;input type=&quot;number&quot;
+id=&quot;pils&quot; name=&quot;pils&quot; min=&quot;0&quot;
+value=&quot;0&quot;&gt;&lt;button type=&quot;button&quot; onclick=&quot;decrement('pils')&quot;&gt;-&lt;/button&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;increment('pils')&quot;&gt;+&lt;/button&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>            &lt;div
+class=&quot;drink&quot;&gt;&lt;label
+for=&quot;kriek&quot;&gt;Kriek&lt;/label&gt;&lt;input type=&quot;number&quot;
+id=&quot;kriek&quot; name=&quot;kriek&quot; min=&quot;0&quot;
+value=&quot;0&quot;&gt;&lt;button type=&quot;button&quot;
+onclick=&quot;decrement('kriek')&quot;&gt;-&lt;/button&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;increment('kriek')&quot;&gt;+&lt;/button&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>            &lt;div
+class=&quot;drink&quot;&gt;&lt;label
+for=&quot;non-alcoholic-beer&quot;&gt;Non-alcoholic Beer&lt;/label&gt;&lt;input
+type=&quot;number&quot; id=&quot;non-alcoholic-beer&quot;
+name=&quot;non-alcoholic-beer&quot; min=&quot;0&quot; value=&quot;0&quot;&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;decrement('non-alcoholic-beer')&quot;&gt;-&lt;/button&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;increment('non-alcoholic-beer')&quot;&gt;+&lt;/button&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>            &lt;div
+class=&quot;drink&quot;&gt;&lt;label
+for=&quot;cola&quot;&gt;Cola&lt;/label&gt;&lt;input type=&quot;number&quot;
+id=&quot;cola&quot; name=&quot;cola&quot; min=&quot;0&quot;
+value=&quot;0&quot;&gt;&lt;button type=&quot;button&quot; onclick=&quot;decrement('cola')&quot;&gt;-&lt;/button&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;increment('cola')&quot;&gt;+&lt;/button&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>            &lt;div
+class=&quot;drink&quot;&gt;&lt;label for=&quot;cola-zero&quot;&gt;Cola
+Zero&lt;/label&gt;&lt;input type=&quot;number&quot; id=&quot;cola-zero&quot;
+name=&quot;cola-zero&quot; min=&quot;0&quot; value=&quot;0&quot;&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;decrement('cola-zero')&quot;&gt;-&lt;/button&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;increment('cola-zero')&quot;&gt;+&lt;/button&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>            &lt;div
+class=&quot;drink&quot;&gt;&lt;label
+for=&quot;fanta&quot;&gt;Fanta&lt;/label&gt;&lt;input type=&quot;number&quot;
+id=&quot;fanta&quot; name=&quot;fanta&quot; min=&quot;0&quot;
+value=&quot;0&quot;&gt;&lt;button type=&quot;button&quot;
+onclick=&quot;decrement('fanta')&quot;&gt;-&lt;/button&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;increment('fanta')&quot;&gt;+&lt;/button&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>            &lt;div
+class=&quot;drink&quot;&gt;&lt;label
+for=&quot;sprite&quot;&gt;Sprite&lt;/label&gt;&lt;input type=&quot;number&quot;
+id=&quot;sprite&quot; name=&quot;sprite&quot; min=&quot;0&quot;
+value=&quot;0&quot;&gt;&lt;button type=&quot;button&quot;
+onclick=&quot;decrement('sprite')&quot;&gt;-&lt;/button&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;increment('sprite')&quot;&gt;+&lt;/button&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>            &lt;div
+class=&quot;drink&quot;&gt;&lt;label for=&quot;ice-tea&quot;&gt;Ice
+Tea&lt;/label&gt;&lt;input type=&quot;number&quot; id=&quot;ice-tea&quot;
+name=&quot;ice-tea&quot; min=&quot;0&quot; value=&quot;0&quot;&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;decrement('ice-tea')&quot;&gt;-&lt;/button&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;increment('ice-tea')&quot;&gt;+&lt;/button&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>            &lt;div
+class=&quot;drink&quot;&gt;&lt;label for=&quot;aa-drink&quot;&gt;AA
+Drink&lt;/label&gt;&lt;input type=&quot;number&quot; id=&quot;aa-drink&quot;
+name=&quot;aa-drink&quot; min=&quot;0&quot; value=&quot;0&quot;&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;decrement('aa-drink')&quot;&gt;-&lt;/button&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;increment('aa-drink')&quot;&gt;+&lt;/button&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>            &lt;div
+class=&quot;drink&quot;&gt;&lt;label
+for=&quot;bruiswater&quot;&gt;Bruiswater&lt;/label&gt;&lt;input
+type=&quot;number&quot; id=&quot;bruiswater&quot; name=&quot;bruiswater&quot;
+min=&quot;0&quot; value=&quot;0&quot;&gt;&lt;button type=&quot;button&quot;
+onclick=&quot;decrement('bruiswater')&quot;&gt;-&lt;/button&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;increment('bruiswater')&quot;&gt;+&lt;/button&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>            &lt;div
+class=&quot;drink&quot;&gt;&lt;label for=&quot;plat-water&quot;&gt;Plat
+Water&lt;/label&gt;&lt;input type=&quot;number&quot; id=&quot;plat-water&quot;
+name=&quot;plat-water&quot; min=&quot;0&quot; value=&quot;0&quot;&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;decrement('plat-water')&quot;&gt;-&lt;/button&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;increment('plat-water')&quot;&gt;+&lt;/button&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>            &lt;div
+class=&quot;drink&quot;&gt;&lt;label
+for=&quot;koffie&quot;&gt;Koffie&lt;/label&gt;&lt;input type=&quot;number&quot;
+id=&quot;koffie&quot; name=&quot;koffie&quot; min=&quot;0&quot;
+value=&quot;0&quot;&gt;&lt;button type=&quot;button&quot;
+onclick=&quot;decrement('koffie')&quot;&gt;-&lt;/button&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;increment('koffie')&quot;&gt;+&lt;/button&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>            &lt;div
+class=&quot;drink&quot;&gt;&lt;label
+for=&quot;deca&quot;&gt;Deca&lt;/label&gt;&lt;input type=&quot;number&quot;
+id=&quot;deca&quot; name=&quot;deca&quot; min=&quot;0&quot;
+value=&quot;0&quot;&gt;&lt;button type=&quot;button&quot; onclick=&quot;decrement('deca')&quot;&gt;-&lt;/button&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;increment('deca')&quot;&gt;+&lt;/button&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>            &lt;div
+class=&quot;drink&quot;&gt;&lt;label for=&quot;thee-citroen&quot;&gt;Thee
+(citroen)&lt;/label&gt;&lt;input type=&quot;number&quot;
+id=&quot;thee-citroen&quot; name=&quot;thee-citroen&quot; min=&quot;0&quot;
+value=&quot;0&quot;&gt;&lt;button type=&quot;button&quot;
+onclick=&quot;decrement('thee-citroen')&quot;&gt;-&lt;/button&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;increment('thee-citroen')&quot;&gt;+&lt;/button&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>            &lt;div
+class=&quot;drink&quot;&gt;&lt;label for=&quot;thee-rozenbottel&quot;&gt;Thee
+(rozenbottel)&lt;/label&gt;&lt;input type=&quot;number&quot;
+id=&quot;thee-rozenbottel&quot; name=&quot;thee-rozenbottel&quot;
+min=&quot;0&quot; value=&quot;0&quot;&gt;&lt;button type=&quot;button&quot;
+onclick=&quot;decrement('thee-rozenbottel')&quot;&gt;-&lt;/button&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;increment('thee-rozenbottel')&quot;&gt;+&lt;/button&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>            &lt;div
+class=&quot;drink&quot;&gt;&lt;label
+for=&quot;oxo&quot;&gt;Oxo&lt;/label&gt;&lt;input type=&quot;number&quot;
+id=&quot;oxo&quot; name=&quot;oxo&quot; min=&quot;0&quot;
+value=&quot;0&quot;&gt;&lt;button type=&quot;button&quot; onclick=&quot;decrement('oxo')&quot;&gt;-&lt;/button&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;increment('oxo')&quot;&gt;+&lt;/button&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>            &lt;div
+class=&quot;drink&quot;&gt;&lt;label for=&quot;soep-tomaat&quot;&gt;Soep
+(tomaat)&lt;/label&gt;&lt;input type=&quot;number&quot;
+id=&quot;soep-tomaat&quot; name=&quot;soep-tomaat&quot; min=&quot;0&quot;
+value=&quot;0&quot;&gt;&lt;button type=&quot;button&quot;
+onclick=&quot;decrement('soep-tomaat')&quot;&gt;-&lt;/button&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;increment('soep-tomaat')&quot;&gt;+&lt;/button&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>            &lt;div
+class=&quot;drink&quot;&gt;&lt;label for=&quot;soep-kip&quot;&gt;Soep
+(kip)&lt;/label&gt;&lt;input type=&quot;number&quot; id=&quot;soep-kip&quot;
+name=&quot;soep-kip&quot; min=&quot;0&quot; value=&quot;0&quot;&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;decrement('soep-kip')&quot;&gt;-&lt;/button&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;increment('soep-kip')&quot;&gt;+&lt;/button&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>            &lt;div
+class=&quot;drink&quot;&gt;&lt;label for=&quot;soep-curry&quot;&gt;Soep
+(curry)&lt;/label&gt;&lt;input type=&quot;number&quot;
+id=&quot;soep-curry&quot; name=&quot;soep-curry&quot; min=&quot;0&quot;
+value=&quot;0&quot;&gt;&lt;button type=&quot;button&quot;
+onclick=&quot;decrement('soep-curry')&quot;&gt;-&lt;/button&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;increment('soep-curry')&quot;&gt;+&lt;/button&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>            &lt;div
+class=&quot;drink&quot;&gt;&lt;label for=&quot;soep-groenten&quot;&gt;Soep
+(groenten)&lt;/label&gt;&lt;input type=&quot;number&quot;
+id=&quot;soep-groenten&quot; name=&quot;soep-groenten&quot; min=&quot;0&quot;
+value=&quot;0&quot;&gt;&lt;button type=&quot;button&quot;
+onclick=&quot;decrement('soep-groenten')&quot;&gt;-&lt;/button&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;increment('soep-groenten')&quot;&gt;+&lt;/button&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>            &lt;div
+class=&quot;drink&quot;&gt;&lt;label for=&quot;soep-vers&quot;&gt;Soep
+(vers)&lt;/label&gt;&lt;input type=&quot;number&quot; id=&quot;soep-vers&quot;
+name=&quot;soep-vers&quot; min=&quot;0&quot; value=&quot;0&quot;&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;decrement('soep-vers')&quot;&gt;-&lt;/button&gt;&lt;button
+type=&quot;button&quot;
+onclick=&quot;increment('soep-vers')&quot;&gt;+&lt;/button&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>            &lt;button
+type=&quot;button&quot; onclick=&quot;submitOrder()&quot;&gt;Submit
+Order&lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>        &lt;/form&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>        &lt;div
+id=&quot;order-summary&quot;&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>    &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>    &lt;script
+src=&quot;script.js&quot;&gt;&lt;/script&gt;</span></p>
+
+<p class=MsoNormal>&lt;/body&gt;</p>
+
+<p class=MsoNormal>&lt;/html&gt;</p>
+
+</div>
+
+</body>
+
+</html>
